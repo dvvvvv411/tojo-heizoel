@@ -1,54 +1,118 @@
 
-# Hero Section im Attendflow-Style
 
-## Attendflow Design-Merkmale (aus der Referenz)
-- Zentriertes Layout mit sehr grosser, fetter Headline
-- Ein Schluesselwort dekorativ hervorgehoben (mit gestricheltem Rahmen und Sternchen-Dekorationen)
-- Subtiles Gitter-Muster im Hintergrund (leichte Linien)
-- Extrem viel Whitespace, minimalistisch
-- Vertrauens-Badges unterhalb des CTA-Bereichs
-- Dezente, abgerundete Hintergrundform (leichter Farbverlauf oben)
+# Branding-Austausch: Valentin GmbH -> ToJo Verwaltungs GmbH
 
-## Anpassung fuer Valentin Heizoel (rote Akzente, helles Theme)
+## Uebersicht der Aenderungen
 
-### HeroSection.tsx -- Komplett-Redesign
+Alle Verweise auf "Valentin" werden durch die neuen Tojo-Daten ersetzt. Hier die Zuordnung:
 
-**Layout-Aenderungen:**
-- Von 2-Spalten-Grid zu zentriertem, einspaltigen Layout wechseln
-- USP-Karussell und Trust-Stats-Karten entfernen (zu viel visuelles Gewicht)
-- Stattdessen: Badge oben, grosse zentrierte Headline, Subtext, Checkliste, dann Preisrechner
+| Alt | Neu |
+|-----|-----|
+| Valentin GmbH | ToJo Verwaltungs GmbH |
+| Valentin Heizoel | Tojo Heizoel |
+| Rheinallee 187 | Am Flugplatz 5 a |
+| 55120 Mainz | 55126 Mainz |
+| HRB 4 | HRB 52919 |
+| Julia Muendler | Felix Pohl |
+| DE280303368 | DE178674101 |
+| 06131-6365855 | 06131-6365852 |
+| info@valentin-heizoel.de | info@tojo-heizoel.de |
+| valentin-heizoel.de | tojo-heizoel.de |
+| checkout.valentin-heizoel.de | checkout.tojo-heizoel.de |
 
-**Hintergrund:**
-- Weisser Hintergrund mit subtiler abgerundeter Form oben (leichter roter Gradient, z.B. `bg-gradient-to-b from-red-50/40 to-white`)
-- Feines Gitter-Muster im Attendflow-Stil (gestrichelte/feine Linien, leicht sichtbar)
-- Dezente rote Gradient-Orbs mit erhoehter Sichtbarkeit
+## Betroffene Dateien (18 Dateien)
 
-**Headline-Bereich (zentriert):**
-- Badge: "Heizoel-Experte seit ueber 20 Jahren" (wie bisher, aber zentriert)
-- Grosse Headline zentriert: "Heizoel guenstig" / "bestellen" (mit dekorativem Rahmen um "bestellen" im Attendflow-Stil -- gestrichelte Linie + kleine Stern-Dekorationen in Rot) / "Deutschlandweit"
-- Subtext zentriert: "Vertrauen Sie auf ueber 20 Jahre Erfahrung"
-- Checkliste zentriert (3 Punkte mit roten Checks)
+### 1. `index.html`
+- Title: "Valentin Heizoel" -> "Tojo Heizoel"
+- Meta description und keywords: Valentin -> Tojo
+- Author: "Valentin GmbH" -> "ToJo Verwaltungs GmbH"
 
-**Dekorative Elemente:**
-- Das Wort "bestellen" bekommt einen gestrichelten Rahmen (dashed border) in Rot mit kleinen Sparkle-Icons, aehnlich wie bei Attendflow "simple"
-- Kleine dekorative Sterne/Sparkles neben dem hervorgehobenen Wort
+### 2. `src/pages/Index.tsx`
+- Helmet title und description: Valentin -> Tojo
 
-**Trust-Bereich:**
-- Statt der grossen Trust-Stats-Karten: eine schlichte Zeile mit 3 kompakten Stats (100.000+ Kunden | 20+ Jahre | 24h Service) als dezente Badges unter der Checkliste
+### 3. `src/components/Header.tsx`
+- Top-Bar: Telefon 06131-6365855 -> 06131-6365852
+- Top-Bar: info@valentin-heizoel.de -> info@tojo-heizoel.de
+- Logo alt-Text: "Valentin Heizoel" -> "Tojo Heizoel"
+- Logo-Import bleibt vorerst gleich (valentin-logo.png) da kein neues Logo vorhanden
 
-**Preisrechner:**
-- Bleibt technisch identisch, wird weiterhin darunter angezeigt
-- HorizontalPriceCalculator und MobilePriceCalculator werden nicht veraendert
+### 4. `src/components/MobileHeader.tsx`
+- Logo alt-Text: "BIO HEAT Nord" -> "Tojo Heizoel"
+- E-Mail: info@bioheatnord.de -> info@tojo-heizoel.de
 
-### index.css -- Neue Utility-Klasse
-- `.attendflow-grid` fuer das subtile Gitter-Muster (feine Linien, kaum sichtbar)
-- `.dashed-highlight` fuer den gestrichelten Rahmen um das Schluesselwort
+### 5. `src/components/Footer.tsx`
+- Logo alt: "Valentin Heizoel" -> "Tojo Heizoel"
+- Firmenname: "Valentin GmbH" -> "ToJo Verwaltungs GmbH"
+- Telefon: 06131-6365855 -> 06131-6365852 (inkl. tel: Link)
+- E-Mail: info@valentin-heizoel.de -> info@tojo-heizoel.de
+- Adresse: Rheinallee 187 -> Am Flugplatz 5 a, 55120 -> 55126
+- Copyright: Valentin GmbH -> ToJo Verwaltungs GmbH
 
-### Betroffene Dateien
-- `src/components/HeroSection.tsx` -- Hauptaenderung: Layout, Hintergrund, Struktur
-- `src/index.css` -- Neue Utility-Klassen fuer Grid-Muster und Highlight-Rahmen
+### 6. `src/pages/Impressum.tsx`
+- Title/Meta: Valentin GmbH -> ToJo Verwaltungs GmbH
+- Firma: Valentin GmbH -> ToJo Verwaltungs GmbH
+- HRB 4 -> HRB 52919
+- USt-IdNr: DE280303368 -> DE178674101
+- Anschrift: Rheinallee 187, 55120 -> Am Flugplatz 5 a, 55126
+- Telefon: 06131-6365855 -> 06131-6365852
+- E-Mail: info@valentin-heizoel.de -> info@tojo-heizoel.de
+- Geschaeftsfuehrer: Julia Muendler -> Felix Pohl
 
-### Nicht betroffene Dateien
-- `src/components/HorizontalPriceCalculator.tsx` -- keine Aenderung
-- `src/components/MobilePriceCalculator.tsx` -- keine Aenderung
-- `src/components/Header.tsx` -- keine Aenderung in diesem Schritt
+### 7. `src/pages/AGB.tsx`
+- Title/Meta: Valentin -> Tojo
+- "Gueltig fuer Valentin GmbH" -> "Gueltig fuer ToJo Verwaltungs GmbH"
+- Geltungsbereich Text: Valentin GmbH, Rheinallee 187, 55120 Mainz -> ToJo Verwaltungs GmbH, Am Flugplatz 5 a, 55126 Mainz
+
+### 8. `src/pages/Datenschutz.tsx`
+- Title/Meta: Valentin -> Tojo
+- Verantwortlicher: Valentin GmbH -> ToJo Verwaltungs GmbH
+- Adresse: Rheinallee 187, 55120 -> Am Flugplatz 5 a, 55126
+- E-Mail (2x): info@valentin-heizoel.de -> info@tojo-heizoel.de
+
+### 9. `src/pages/Widerrufsrecht.tsx`
+- Title/Meta: Valentin -> Tojo
+- Kontaktdaten fuer Widerruf (3x): Valentin GmbH, Rheinallee 187, 55120 Mainz -> ToJo Verwaltungs GmbH, Am Flugplatz 5 a, 55126 Mainz
+- E-Mail (3x): info@valentin-heizoel.de -> info@tojo-heizoel.de
+
+### 10. `src/pages/AboutUs.tsx`
+- Title/Meta: Valentin -> Tojo
+- "Ueber Valentin GmbH" -> "Ueber ToJo Verwaltungs GmbH"
+- E-Mail Button: info@valentin-heizoel.de -> info@tojo-heizoel.de
+- Company Story: "Valentin GmbH" -> "ToJo Verwaltungs GmbH"
+- Company Card: "Valentin Heizoel" / "Valentin GmbH" -> "Tojo Heizoel" / "ToJo Verwaltungs GmbH"
+- "Warum Valentin Heizoel waehlen?" -> "Warum Tojo Heizoel waehlen?"
+- Badge: "Valentin GmbH" -> "ToJo Verwaltungs GmbH"
+- Anschrift: Rheinallee 187, 55120 -> Am Flugplatz 5 a, 55126
+- HRB 4 -> HRB 52919, DE280303368 -> DE178674101
+- E-Mail: info@valentin-heizoel.de -> info@tojo-heizoel.de
+
+### 11. `src/pages/Products.tsx`
+- Title: "Valentin Heizoel" -> "Tojo Heizoel"
+
+### 12. `src/pages/Services.tsx`
+- Title: "Valentin Heizoel" -> "Tojo Heizoel"
+
+### 13. `src/components/CompanySection.tsx`
+- "Ueber Valentin Heizoel" -> "Ueber Tojo Heizoel"
+- Alt-Text: "Valentin Heizoel Unternehmen" -> "Tojo Heizoel Unternehmen"
+
+### 14. `src/components/ReviewsSection.tsx`
+- Bewertungstext: "Valentin Heizoel" -> "Tojo Heizoel" (2 Stellen in Reviews)
+
+### 15. `src/components/ServiceContact.tsx`
+- E-Mail: info@valentin-heizoel.de -> info@tojo-heizoel.de
+
+### 16. `src/components/DeliverySection.tsx`
+- E-Mail: info@valentin-heizoel.de -> info@tojo-heizoel.de
+
+### 17. `src/components/HorizontalPriceCalculator.tsx`
+- Checkout-URL: checkout.valentin-heizoel.de -> checkout.tojo-heizoel.de
+- Fehler-E-Mail: info@valentin-heizoel.de -> info@tojo-heizoel.de
+
+### 18. `src/components/MobilePriceCalculator.tsx`
+- Checkout-URL: checkout.valentin-heizoel.de -> checkout.tojo-heizoel.de
+
+## Hinweis
+- Das Logo (valentin-logo.png / bioheat-logo.png) wird weiterhin verwendet, da kein neues Logo bereitgestellt wurde. Du kannst spaeter ein eigenes Logo hochladen.
+- Die Checkout-URL wird auf checkout.tojo-heizoel.de umgestellt -- stelle sicher, dass diese Domain korrekt konfiguriert ist.
+
