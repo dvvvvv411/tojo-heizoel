@@ -1,4 +1,4 @@
-import { Building, Users, Award, Clock } from 'lucide-react';
+import { Building, Users, Award, Clock, Sparkles } from 'lucide-react';
 import shopHeaderImage from '@/assets/shop-header.jpg';
 
 const CompanySection = () => {
@@ -16,16 +16,25 @@ const CompanySection = () => {
   ];
 
   return (
-    <section id="ueber-uns" className="py-24 bg-gray-50/50 relative">
-      <div className="container mx-auto px-4">
+    <section id="ueber-uns" className="py-24 lg:py-32 bg-white relative">
+      {/* Subtle Grid Pattern */}
+      <div className="absolute inset-0 bg-grid-subtle" />
+
+      <div className="container mx-auto px-4 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16 max-w-2xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-3 py-1 bg-primary-50 rounded-full text-primary-600 text-xs font-semibold mb-5 border border-primary-100">
-            <Building className="w-3.5 h-3.5" />
-            Über uns
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-primary-50 text-primary-600 rounded-full text-sm font-medium border border-primary-100 mb-6">
+            <Sparkles className="w-3.5 h-3.5" />
+            <span>Über uns</span>
           </div>
-          <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight">
-            Über <span className="text-primary-600">Valentin Heizöl</span>
+          <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-4 leading-tight tracking-tight">
+            Über{' '}
+            <span className="relative inline-block">
+              <span className="text-primary-600">Valentin Heizöl</span>
+              <svg className="absolute -bottom-1.5 left-0 w-full" viewBox="0 0 200 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 8C40 2 80 2 100 4C120 6 160 10 198 4" stroke="#e03c20" strokeWidth="3" strokeLinecap="round" />
+              </svg>
+            </span>
           </h2>
           <p className="text-gray-500 text-lg">
             Ihr zuverlässiger Partner für Heizöl in Deutschland mit über 20 Jahren Erfahrung. 
@@ -34,9 +43,9 @@ const CompanySection = () => {
         </div>
 
         {/* Company Story + Image */}
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-24">
           <div>
-            <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-5">
+            <h3 className="text-2xl lg:text-3xl font-bold text-gray-900 mb-6 tracking-tight">
               Unsere <span className="text-primary-600">Geschichte</span>
             </h3>
             <p className="text-gray-500 text-base leading-relaxed">
@@ -48,21 +57,21 @@ const CompanySection = () => {
             <img 
               src={shopHeaderImage} 
               alt="Valentin Heizöl Unternehmen"
-              className="max-w-[92%] h-auto rounded-2xl"
+              className="max-w-[92%] h-auto rounded-2xl border border-gray-100"
             />
           </div>
         </div>
 
         {/* Stats - Bento Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-20">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-24">
           {stats.map((stat, index) => {
             const IconComponent = stat.icon;
             return (
               <div 
                 key={index} 
-                className="rounded-2xl border border-gray-100 bg-white p-6 text-center hover:border-gray-200 transition-colors duration-200"
+                className="rounded-2xl border border-gray-100 bg-white p-7 text-center transition-colors duration-200 hover:border-gray-200"
               >
-                <div className="w-10 h-10 mx-auto mb-3 rounded-xl bg-primary-50 flex items-center justify-center">
+                <div className="w-10 h-10 mx-auto mb-4 rounded-xl bg-primary-50 flex items-center justify-center">
                   <IconComponent className="w-5 h-5 text-primary-600" />
                 </div>
                 <div className="text-2xl lg:text-3xl font-bold text-gray-900 mb-1">
@@ -77,24 +86,22 @@ const CompanySection = () => {
 
         {/* Values */}
         <div>
-          <h3 className="text-2xl lg:text-3xl font-bold text-center text-gray-900 mb-12">
+          <h3 className="text-2xl lg:text-3xl font-bold text-center text-gray-900 mb-14 tracking-tight">
             Unsere <span className="text-primary-600">Werte</span>
           </h3>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-4">
             {values.map((value, index) => (
-              <div key={index} className="relative pt-4">
-                <span className="absolute -top-6 -left-1 text-7xl font-bold text-gray-100 select-none pointer-events-none">
+              <div key={index} className="rounded-2xl border border-gray-100 bg-white p-7 transition-colors duration-200 hover:border-gray-200">
+                <span className="text-5xl font-bold text-gray-100 block mb-3">
                   {value.number}
                 </span>
-                <div className="relative pl-5 border-l-2 border-gray-200">
-                  <h4 className="text-lg font-bold text-gray-900 mb-2 uppercase tracking-wide">
-                    {value.title}
-                  </h4>
-                  <p className="text-gray-500 text-sm leading-relaxed">
-                    {value.description}
-                  </p>
-                </div>
+                <h4 className="text-lg font-bold text-gray-900 mb-2 uppercase tracking-wide">
+                  {value.title}
+                </h4>
+                <p className="text-gray-500 text-sm leading-relaxed">
+                  {value.description}
+                </p>
               </div>
             ))}
           </div>

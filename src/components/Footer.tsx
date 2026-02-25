@@ -1,4 +1,4 @@
-import { Mail, MapPin, Clock, ArrowUpRight, Sparkles, Phone } from 'lucide-react';
+import { Mail, MapPin, Clock, Sparkles, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import valentinLogo from '@/assets/valentin-logo.png';
 
@@ -20,9 +20,9 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-950 text-white">
-      <div className="container mx-auto px-4 py-16 lg:py-20">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+    <footer className="bg-gray-900 text-white border-t border-gray-800">
+      <div className="container mx-auto px-4 py-20 lg:py-24">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-10">
           {/* Company Info */}
           <div className="space-y-5">
             <img src={valentinLogo} alt="Valentin Heizöl" className="h-10" />
@@ -37,9 +37,9 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="space-y-4">
+          <div className="space-y-5">
             <h3 className="text-sm font-semibold text-white uppercase tracking-wider">Quick Links</h3>
-            <ul className="space-y-2">
+            <ul className="space-y-3">
               {quickLinks.map((link) => (
                 <li key={link.to}>
                   <Link 
@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
 
           {/* Contact */}
-          <div className="space-y-4">
+          <div className="space-y-5">
             <h3 className="text-sm font-semibold text-white uppercase tracking-wider">Kontakt</h3>
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-sm text-gray-400">
@@ -76,20 +76,20 @@ const Footer = () => {
           </div>
 
           {/* Business Hours */}
-          <div className="space-y-4">
+          <div className="space-y-5">
             <h3 className="text-sm font-semibold text-white uppercase tracking-wider">Öffnungszeiten</h3>
             <div className="flex items-center gap-2 text-sm text-gray-400">
               <Clock size={16} className="text-gray-500 flex-shrink-0" />
               <span>Service-Hotline</span>
             </div>
-            <div className="space-y-1 text-xs text-gray-500">
+            <div className="space-y-1.5 text-xs text-gray-500">
               <div>Mo - Fr: 08:00 - 18:00</div>
               <div>Sa: 09:00 - 14:00</div>
               <div>So: Notfall-Hotline</div>
             </div>
             
-            <div className="rounded-xl p-3 bg-gray-900 border border-gray-800">
-              <div className="flex items-center gap-1.5 text-primary-400 text-xs font-semibold mb-1">
+            <div className="rounded-xl p-4 bg-gray-800/50 border border-gray-800">
+              <div className="flex items-center gap-1.5 text-primary-400 text-xs font-semibold mb-1.5">
                 <Sparkles size={12} />
                 <span>24/7 Notfall-Service</span>
               </div>
@@ -101,20 +101,19 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-14 pt-6 border-t border-gray-800/50">
+        <div className="mt-16 pt-8 border-t border-gray-800">
           <div className="flex flex-col lg:flex-row justify-between items-center gap-4">
             <div className="text-gray-500 text-xs">
               © {currentYear} Valentin GmbH. Alle Rechte vorbehalten.
             </div>
-            <div className="flex flex-wrap justify-center gap-x-5 gap-y-2 text-xs">
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-xs">
               {legalLinks.map((link) => (
                 <Link 
                   key={link.to}
                   to={link.to} 
-                  className="group flex items-center gap-1 text-gray-500 hover:text-white transition-colors duration-200"
+                  className="text-gray-500 hover:text-white transition-colors duration-200"
                 >
-                  <span>{link.label}</span>
-                  <ArrowUpRight size={10} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                  {link.label}
                 </Link>
               ))}
             </div>
