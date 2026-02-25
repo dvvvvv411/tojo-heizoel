@@ -382,6 +382,27 @@
   }
 }
 
+/* Attendflow Grid Pattern */
+.attendflow-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.035;
+  background-image:
+    linear-gradient(hsl(var(--destructive)) 1px, transparent 1px),
+    linear-gradient(90deg, hsl(var(--destructive)) 1px, transparent 1px);
+  background-size: 64px 64px;
+  pointer-events: none;
+}
+
+/* Dashed Highlight - Attendflow keyword decoration */
+.dashed-highlight {
+  position: relative;
+  display: inline-block;
+  padding: 0.1em 0.4em;
+  border: 2px dashed hsl(var(--destructive) / 0.45);
+  border-radius: 0.5rem;
+}
+
 /* Print Styles */
 @media print {
   .no-print {
