@@ -45,13 +45,13 @@ const Header = () => {
           )}>
             <div className="flex justify-between items-center text-sm text-gray-600">
               <div className="flex items-center space-x-6">
-                <a href="tel:+4961316365855" className="flex items-center space-x-2 hover:text-primary-600 transition-colors">
+                <a href="tel:+4961316365852" className="flex items-center space-x-2 hover:text-primary-600 transition-colors">
                   <Phone size={14} className="text-accent-orange-500" />
-                  <span>06131-6365855</span>
+                  <span>06131-6365852</span>
                 </a>
                 <div className="flex items-center space-x-2">
                   <Bell size={14} className="text-accent-orange-500" />
-                  <span>info@valentin-heizoel.de</span>
+                  <span>info@tojo-heizoel.de</span>
                 </div>
               </div>
               <div className="flex items-center gap-2 text-accent-orange-600 font-medium">
@@ -67,7 +67,7 @@ const Header = () => {
               <Link to="/" className="flex items-center group">
                 <img 
                   src={valentinLogo} 
-                  alt="Valentin Heizöl" 
+                  alt="Tojo Heizöl"
                   className="h-11 transition-transform duration-300 group-hover:scale-105"
                 />
               </Link>
@@ -131,7 +131,7 @@ const Header = () => {
             <Link to="/" className="absolute left-1/2 transform -translate-x-1/2 flex items-center">
               <img 
                 src={valentinLogo} 
-                alt="Valentin Heizöl" 
+                alt="Tojo Heizöl" 
                 className="h-8"
               />
             </Link>

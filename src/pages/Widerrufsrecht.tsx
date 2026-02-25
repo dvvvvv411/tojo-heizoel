@@ -8,8 +8,8 @@ const Widerrufsrecht = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Widerrufsrecht | Ihre Verbraucherrechte - Valentin Heizöl</title>
-        <meta name="description" content="Widerrufsbelehrung für Heizöl-Bestellungen bei Valentin Heizöl. Ihre gesetzlichen Verbraucherrechte, Fristen und Muster-Widerrufsformular." />
+        <title>Widerrufsrecht | Ihre Verbraucherrechte - Tojo Heizöl</title>
+        <meta name="description" content="Widerrufsbelehrung für Heizöl-Bestellungen bei Tojo Heizöl. Ihre gesetzlichen Verbraucherrechte, Fristen und Muster-Widerrufsformular." />
       </Helmet>
       <Header />
 
@@ -48,14 +48,14 @@ const Widerrufsrecht = () => {
             </CardHeader>
             <CardContent className="space-y-4">
               <p className="text-gray-700 text-sm leading-relaxed">
-                Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (Valentin GmbH, Rheinallee 187, 55120 Mainz, E-Mail: info@valentin-heizoel.de) mittels einer eindeutigen Erklärung (z.B. ein mit der Post versandter Brief, Telefax oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren.
+                Um Ihr Widerrufsrecht auszuüben, müssen Sie uns (ToJo Verwaltungs GmbH, Am Flugplatz 5 a, 55126 Mainz, E-Mail: info@tojo-heizoel.de) mittels einer eindeutigen Erklärung (z.B. ein mit der Post versandter Brief, Telefax oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren.
               </p>
               
               <div className="bg-primary-50 p-4 rounded-lg">
                 <h3 className="font-semibold text-gray-900 mb-2">Kontakt für Widerruf:</h3>
                 <div className="space-y-1 text-gray-700 text-sm">
-                  <p><span className="font-semibold">Adresse:</span> Valentin GmbH, Rheinallee 187, 55120 Mainz</p>
-                  <p><span className="font-semibold">E-Mail:</span> info@valentin-heizoel.de</p>
+                   <p><span className="font-semibold">Adresse:</span> ToJo Verwaltungs GmbH, Am Flugplatz 5 a, 55126 Mainz</p>
+                   <p><span className="font-semibold">E-Mail:</span> info@tojo-heizoel.de</p>
                 </div>
               </div>
 
@@ -130,7 +130,7 @@ const Widerrufsrecht = () => {
                 </p>
                 
                 <div className="space-y-4 text-gray-700 text-sm">
-                  <p>An: Valentin GmbH, Rheinallee 187, 55120 Mainz, E-Mail: info@valentin-heizoel.de</p>
+                  <p>An: ToJo Verwaltungs GmbH, Am Flugplatz 5 a, 55126 Mainz, E-Mail: info@tojo-heizoel.de</p>
                   
                   <p>Hiermit widerrufe(n) ich/wir (*) den von mir/uns (*) abgeschlossenen Vertrag über den Kauf der folgenden Waren (*):</p>
                   

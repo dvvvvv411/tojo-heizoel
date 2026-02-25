@@ -8,8 +8,8 @@ const Impressum = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Impressum | Valentin GmbH - Heizöl-Anbieter aus Mainz</title>
-        <meta name="description" content="Impressum der Valentin GmbH, Rheinallee 187, 55120 Mainz. Rechtliche Angaben, Kontaktdaten und Unternehmensregistrierung gemäß § 5 TMG." />
+        <title>Impressum | ToJo Verwaltungs GmbH - Heizöl-Anbieter aus Mainz</title>
+        <meta name="description" content="Impressum der ToJo Verwaltungs GmbH, Am Flugplatz 5 a, 55126 Mainz. Rechtliche Angaben, Kontaktdaten und Unternehmensregistrierung gemäß § 5 TMG." />
       </Helmet>
       <Header />
 
@@ -33,7 +33,7 @@ const Impressum = () => {
               <CardContent className="space-y-3">
                 <div>
                   <h3 className="font-semibold text-gray-900">Firma:</h3>
-                  <p className="text-gray-700">Valentin GmbH</p>
+                  <p className="text-gray-700">ToJo Verwaltungs GmbH</p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Rechtsform:</h3>
@@ -41,7 +41,7 @@ const Impressum = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Handelsregister:</h3>
-                  <p className="text-gray-700">HRB 4</p>
+                  <p className="text-gray-700">HRB 52919</p>
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">Registergericht:</h3>
@@ -49,7 +49,7 @@ const Impressum = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900">USt-IdNr.:</h3>
-                  <p className="text-gray-700">DE280303368</p>
+                  <p className="text-gray-700">DE178674101</p>
                 </div>
               </CardContent>
             </Card>
@@ -67,9 +67,9 @@ const Impressum = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900">Anschrift:</h3>
                     <p className="text-gray-700">
-                      Valentin GmbH<br />
-                      Rheinallee 187<br />
-                      55120 Mainz<br />
+                      ToJo Verwaltungs GmbH<br />
+                      Am Flugplatz 5 a<br />
+                      55126 Mainz<br />
                       Deutschland
                     </p>
                   </div>
@@ -79,7 +79,7 @@ const Impressum = () => {
                   <Phone className="text-primary-600" size={20} />
                   <div>
                     <h3 className="font-semibold text-gray-900">Telefon:</h3>
-                    <p className="text-gray-700">06131-6365855</p>
+                    <p className="text-gray-700">06131-6365852</p>
                   </div>
                 </div>
                 
@@ -87,7 +87,7 @@ const Impressum = () => {
                   <Mail className="text-primary-600" size={20} />
                   <div>
                     <h3 className="font-semibold text-gray-900">E-Mail:</h3>
-                    <p className="text-gray-700">info@valentin-heizoel.de</p>
+                    <p className="text-gray-700">info@tojo-heizoel.de</p>
                   </div>
                 </div>
               </CardContent>
@@ -99,7 +99,7 @@ const Impressum = () => {
               <CardTitle>Geschäftsführung</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-700">Julia Mündler</p>
+              <p className="text-gray-700">Felix Pohl</p>
             </CardContent>
           </Card>
 

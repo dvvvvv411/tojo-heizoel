@@ -11,8 +11,8 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Valentin Heizöl | Günstig bestellen & schnell geliefert - Deutschlandweit</title>
-        <meta name="description" content="Heizöl günstig online bestellen bei Valentin Heizöl. ✓ Deutschlandweite Lieferung ✓ Premium-Qualität ✓ Faire Preise ✓ Über 100.000 zufriedene Kunden. Jetzt Preis berechnen!" />
+        <title>Tojo Heizöl | Günstig bestellen & schnell geliefert - Deutschlandweit</title>
+        <meta name="description" content="Heizöl günstig online bestellen bei Tojo Heizöl. ✓ Deutschlandweite Lieferung ✓ Premium-Qualität ✓ Faire Preise ✓ Über 100.000 zufriedene Kunden. Jetzt Preis berechnen!" />
       </Helmet>
       <Header />
       <HeroSection />

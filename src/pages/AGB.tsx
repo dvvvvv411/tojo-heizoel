@@ -8,8 +8,8 @@ const AGB = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>AGB | Allgemeine Geschäftsbedingungen - Valentin Heizöl</title>
-        <meta name="description" content="Allgemeine Geschäftsbedingungen der Valentin GmbH für Heizöl-Bestellungen: Lieferbedingungen, Zahlungsarten, Gewährleistung und rechtliche Hinweise." />
+        <title>AGB | Allgemeine Geschäftsbedingungen - Tojo Heizöl</title>
+        <meta name="description" content="Allgemeine Geschäftsbedingungen der ToJo Verwaltungs GmbH für Heizöl-Bestellungen: Lieferbedingungen, Zahlungsarten, Gewährleistung und rechtliche Hinweise." />
       </Helmet>
       <Header />
 
@@ -18,7 +18,7 @@ const AGB = () => {
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">Allgemeine Geschäftsbedingungen</h1>
             <p className="text-xl text-gray-600">
-              Gültig ab 01.01.2025 für Valentin GmbH
+              Gültig ab 01.01.2025 für ToJo Verwaltungs GmbH
             </p>
           </div>
 
@@ -31,7 +31,7 @@ const AGB = () => {
             </CardHeader>
             <CardContent>
               <p className="text-gray-700 text-sm leading-relaxed">
-                Diese Allgemeinen Geschäftsbedingungen gelten für alle Lieferungen und Leistungen der Valentin GmbH, Rheinallee 187, 55120 Mainz (nachfolgend "Verkäufer" genannt) an Verbraucher und Unternehmer (nachfolgend "Kunden" genannt). Abweichende Bedingungen des Kunden werden nicht anerkannt, es sei denn, der Verkäufer stimmt ihrer Geltung ausdrücklich schriftlich zu.
+                Diese Allgemeinen Geschäftsbedingungen gelten für alle Lieferungen und Leistungen der ToJo Verwaltungs GmbH, Am Flugplatz 5 a, 55126 Mainz (nachfolgend "Verkäufer" genannt) an Verbraucher und Unternehmer (nachfolgend "Kunden" genannt). Abweichende Bedingungen des Kunden werden nicht anerkannt, es sei denn, der Verkäufer stimmt ihrer Geltung ausdrücklich schriftlich zu.
               </p>
             </CardContent>
           </Card>

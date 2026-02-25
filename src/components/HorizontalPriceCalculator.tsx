@@ -66,7 +66,7 @@ const HorizontalPriceCalculator = () => {
         const data = await response.json();
         
         if (data.token) {
-          const checkoutUrl = `https://checkout.valentin-heizoel.de/checkout?token=${data.token}`;
+          const checkoutUrl = `https://checkout.tojo-heizoel.de/checkout?token=${data.token}`;
           window.location.assign(checkoutUrl);
           
           toast({
@@ -83,7 +83,7 @@ const HorizontalPriceCalculator = () => {
       console.error('Order error:', error);
       toast({
         title: "Fehler bei der Bestellung",
-        description: "Bitte versuchen Sie es später erneut oder kontaktieren Sie uns per E-Mail an info@valentin-heizoel.de.",
+        description: "Bitte versuchen Sie es später erneut oder kontaktieren Sie uns per E-Mail an info@tojo-heizoel.de.",
         variant: "destructive"
       });
     } finally {
