@@ -107,7 +107,7 @@ const AboutUs = () => {
     <div className="min-h-screen">
       <Helmet>
         <title>Über uns | Tojo Heizöl - Seit 2007 Ihr Partner für Heizöl</title>
-        <meta name="description" content="Lernen Sie die ToJo Verwaltungs GmbH kennen: Über 18 Jahre Erfahrung, 100.000+ zufriedene Kunden und deutschlandweite Lieferung. Qualität, Service und faire Preise aus Mainz." />
+        <meta name="description" content="Lernen Sie Tojo Heizöl kennen: Über 18 Jahre Erfahrung, 100.000+ zufriedene Kunden und deutschlandweite Lieferung. Qualität, Service und faire Preise aus Mainz." />
       </Helmet>
       <Header />
 
@@ -125,7 +125,7 @@ const AboutUs = () => {
           </div>
           
           <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-            Über <span className="gradient-text-premium">ToJo Verwaltungs GmbH</span>
+            Über <span className="gradient-text-premium">Tojo Heizöl</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-10 leading-relaxed">
             Seit 2007 Ihr zuverlässiger Partner für Premium-Heizöl in Deutschland. 
@@ -194,7 +194,7 @@ const AboutUs = () => {
               </h2>
               <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
                 <p>
-                  Im Jahr <span className="font-semibold text-primary-600">2007</span> wurde die ToJo Verwaltungs GmbH mit dem Ziel gegründet, 
+                  Im Jahr <span className="font-semibold text-primary-600">2007</span> wurde Tojo Heizöl mit dem Ziel gegründet, 
                   Kunden in Deutschland mit hochwertigem Heizöl zu fairen Preisen zu versorgen. 
                   Was als Unternehmen in Mainz begann, hat sich zu einem der 
                   führenden Heizöl-Anbieter in der Region entwickelt.
@@ -405,7 +405,7 @@ const AboutUs = () => {
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary-50 rounded-full text-primary-700 text-sm font-semibold mb-6">
               <Building className="w-4 h-4" />
-              ToJo Verwaltungs GmbH
+              Tojo Heizöl
             </div>
           </div>
           
@@ -413,7 +413,7 @@ const AboutUs = () => {
             <div className="premium-card rounded-3xl p-8 lg:p-12">
               <div className="text-center mb-10">
                 <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                  <span className="gradient-text-premium">ToJo Verwaltungs GmbH</span>
+                  <span className="gradient-text-premium">Tojo Heizöl</span>
                 </h2>
                 <p className="text-xl text-gray-600">
                   Ihr Partner für Heizöl in Deutschland
