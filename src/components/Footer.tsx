@@ -32,7 +32,7 @@ const Footer = () => {
             <img 
               src={tojoLogo} 
               alt="Tojo Heizöl" 
-              className="h-12 lg:h-[51.2px]"
+              className="h-16 lg:h-20"
             />
             <p className="text-gray-400 leading-relaxed">
               Ihr zuverlässiger Partner für Heizöl in Deutschland mit über 20 Jahren Erfahrung. 
