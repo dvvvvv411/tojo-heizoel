@@ -68,7 +68,7 @@ const Header = () => {
                 <img 
                   src={tojoLogo}
                   alt="Tojo Heizöl"
-                  className="h-14 transition-transform duration-300 group-hover:scale-105"
+                  className="h-20 transition-transform duration-300 group-hover:scale-105"
                 />
               </Link>
             </div>
@@ -132,7 +132,7 @@ const Header = () => {
               <img 
                 src={tojoLogo} 
                 alt="Tojo Heizöl" 
-                className="h-10"
+                className="h-12"
               />
             </Link>
           </div>
