@@ -61,7 +61,7 @@ const CompanySection = () => {
             Über uns
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            Über <span className="gradient-text-premium">Valentin Heizöl</span>
+            Über <span className="gradient-text-premium">Tojo Heizöl</span>
           </h2>
           <p className="text-xl text-gray-600 leading-relaxed">
             Ihr zuverlässiger Partner für Heizöl in Deutschland mit über 20 Jahren Erfahrung. 
@@ -86,7 +86,7 @@ const CompanySection = () => {
           <div className="relative flex items-center justify-center">
             <img 
               src={shopHeaderImage} 
-              alt="Valentin Heizöl Unternehmen"
+              alt="Tojo Heizöl Unternehmen"
               className="max-w-[92%] h-auto object-contain transition-transform duration-700 hover:scale-105"
             />
           </div>

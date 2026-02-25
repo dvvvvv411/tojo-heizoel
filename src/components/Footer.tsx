@@ -31,7 +31,7 @@ const Footer = () => {
           <div className="lg:col-span-1 space-y-6">
             <img 
               src={valentinLogo} 
-              alt="Valentin Heizöl" 
+              alt="Tojo Heizöl" 
               className="h-12 lg:h-[51.2px]"
             />
             <p className="text-gray-400 leading-relaxed">
@@ -39,7 +39,7 @@ const Footer = () => {
               Qualität, Service und faire Preise.
             </p>
             <div className="pt-2">
-              <div className="font-semibold text-white">Valentin GmbH</div>
+              <div className="font-semibold text-white">ToJo Verwaltungs GmbH</div>
               <div className="text-sm text-gray-500">Deutschlands Heizöl-Experte</div>
             </div>
           </div>
@@ -70,21 +70,21 @@ const Footer = () => {
                 <div className="w-10 h-10 rounded-xl bg-primary-900/50 flex items-center justify-center">
                   <Phone size={18} className="text-primary-400" />
                 </div>
-                <a href="tel:+4961316365855" className="hover:text-white transition-colors">06131-6365855</a>
+                <a href="tel:+4961316365852" className="hover:text-white transition-colors">06131-6365852</a>
               </div>
               <div className="flex items-center gap-3 text-gray-400">
                 <div className="w-10 h-10 rounded-xl bg-primary-900/50 flex items-center justify-center">
                   <Mail size={18} className="text-primary-400" />
                 </div>
-                <span>info@valentin-heizoel.de</span>
+                <span>info@tojo-heizoel.de</span>
               </div>
               <div className="flex items-start gap-3 text-gray-400">
                 <div className="w-10 h-10 rounded-xl bg-accent-orange-900/50 flex items-center justify-center flex-shrink-0">
                   <MapPin size={18} className="text-accent-orange-400" />
                 </div>
                 <div>
-                  <div>Rheinallee 187</div>
-                  <div>55120 Mainz</div>
+                  <div>Am Flugplatz 5 a</div>
+                  <div>55126 Mainz</div>
                 </div>
               </div>
             </div>
@@ -127,7 +127,7 @@ const Footer = () => {
         <div className="mt-16 pt-8 border-t border-gray-800/50">
           <div className="flex flex-col lg:flex-row justify-between items-center gap-6">
             <div className="text-gray-500 text-sm">
-              © {currentYear} Valentin GmbH. Alle Rechte vorbehalten.
+              © {currentYear} ToJo Verwaltungs GmbH. Alle Rechte vorbehalten.
             </div>
             <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm">
               {legalLinks.map((link, index) => (
