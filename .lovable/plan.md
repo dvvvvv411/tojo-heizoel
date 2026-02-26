@@ -1,27 +1,12 @@
 
-# Letzte "Valentin"-Referenzen entfernen
+# Shop-ID in allen Preisrechnern aktualisieren
 
-Es gibt noch 3 Stellen, an denen "Valentin" vorkommt:
+Die Checkout-URL ist bereits korrekt auf `checkout.tojo-heizoel.de` gesetzt. Die Shop-ID muss in 3 Dateien von `5cb5aa20-02d3-4297-a799-19cf1b238a1d` auf `bcca4ece-bada-4a73-9ac4-fa18805c5ad6` geaendert werden:
 
-## Aenderungen
+| Datei | Zeile | Aenderung |
+|-------|-------|-----------|
+| `src/components/PriceCalculator.tsx` | 22 | Shop-ID aktualisieren |
+| `src/components/HorizontalPriceCalculator.tsx` | 19 | Shop-ID aktualisieren |
+| `src/components/MobilePriceCalculator.tsx` | 40 | Shop-ID aktualisieren |
 
-### 1. `src/components/BenefitsSection.tsx` (Zeile 64)
-- **Alt:** `Warum Valentin Heizoel?`
-- **Neu:** `Warum Tojo Heizoel?`
-
-### 2. `src/components/PriceCalculator.tsx` (Zeile 77)
-- **Alt:** `https://checkout.valentin-heizoel.de/checkout?token=...`
-- **Neu:** `https://checkout.tojo-heizoel.de/checkout?token=...`
-
-### 3. `src/components/PriceCalculator.tsx` (Zeile 97)
-- **Alt:** `info@valentin-heizoel.de`
-- **Neu:** `info@tojo-heizoel.de`
-
-### Zusammenfassung
-| Datei | Zeile | Alt | Neu |
-|-------|-------|-----|-----|
-| BenefitsSection.tsx | 64 | Valentin Heizoel | Tojo Heizoel |
-| PriceCalculator.tsx | 77 | checkout.valentin-heizoel.de | checkout.tojo-heizoel.de |
-| PriceCalculator.tsx | 97 | info@valentin-heizoel.de | info@tojo-heizoel.de |
-
-Danach gibt es keine "Valentin"-Referenzen mehr im gesamten Projekt.
+Alle drei Stellen: `5cb5aa20-02d3-4297-a799-19cf1b238a1d` wird zu `bcca4ece-bada-4a73-9ac4-fa18805c5ad6`.
