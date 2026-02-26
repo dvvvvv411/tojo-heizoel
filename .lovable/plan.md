@@ -1,43 +1,25 @@
 
 
-# Korrektur: "ToJo Verwaltungs GmbH" nur in Rechtstexten und Footer
-
-## Problem
-Auf oeffentlichen Seiten wie "Ueber uns" und der CompanySection steht ueberall "ToJo Verwaltungs GmbH" statt "Tojo Heizoel". Der Firmenname "ToJo Verwaltungs GmbH" gehoert nur in:
-- Rechtstexte (Impressum, AGB, Datenschutz, Widerrufsrecht)
-- Footer (Copyright + Firmenname)
-- Anschrift-Bloecke in Rechtstexten
+# Favicon und Branding-Update
 
 ## Aenderungen
 
-### 1. `src/pages/AboutUs.tsx` (Hauptaenderungen)
-- Zeile 128: "Ueber **ToJo Verwaltungs GmbH**" -> "Ueber **Tojo Heizoel**"
-- Zeile 110: Meta description: "die ToJo Verwaltungs GmbH kennen" -> "Tojo Heizoel kennen"
-- Zeile 197: Story-Text: "wurde die ToJo Verwaltungs GmbH" -> "wurde Tojo Heizoel"
-- Zeile 222: Company Card Untertitel "ToJo Verwaltungs GmbH" -> bleibt (ist im Kontext der Firmenkarte ok) ODER entfernen
-- Zeile 408: Badge "ToJo Verwaltungs GmbH" -> "Tojo Heizoel"
-- Zeile 416: Kontakt-Header "ToJo Verwaltungs GmbH" -> "Tojo Heizoel"
-- Zeile 432: Anschrift-Block: "ToJo Verwaltungs GmbH" bleibt (ist die postalische Adresse, rechtlich korrekt)
+### 1. Neues Favicon einrichten
+- Hochgeladenes `tojofavicon.png` nach `public/favicon.png` kopieren (ueberschreibt das alte)
+- Altes `public/favicon.ico` loeschen
+- `index.html` Favicon-Referenz bleibt (`/favicon.png`) -- passt bereits
 
-### 2. `src/components/CompanySection.tsx`
-- "Ueber Tojo Heizoel" Heading und Alt-Text sind bereits korrekt (aus vorherigem Update)
-- Pruefen ob noch Reste vorhanden sind
+### 2. `index.html` -- Meta-Daten pruefen
+- Title, Description, Keywords sind bereits auf "Tojo Heizoel" umgestellt -- keine Aenderung noetig
+- Theme-Color von `#006b51` auf `#e30613` (Tojo-Rot) aendern, passend zum neuen Logo
 
-### Nicht aendern (korrekt so)
-- `Footer.tsx` -- "ToJo Verwaltungs GmbH" im Footer bleibt
-- `Impressum.tsx` -- Rechtstext bleibt
-- `AGB.tsx` -- Rechtstext bleibt
-- `Datenschutz.tsx` -- Rechtstext bleibt
-- `Widerrufsrecht.tsx` -- Rechtstext bleibt
+### 3. Seitentitel und -beschreibungen aller Seiten pruefen
+Die Helmet-Tags in den Seiten sind bereits auf "Tojo Heizoel" umgestellt (aus dem vorherigen Branding-Update). Keine weiteren Aenderungen noetig.
 
-### Zusammenfassung der Ersetzungen
-| Datei | Stelle | Alt | Neu |
-|-------|--------|-----|-----|
-| AboutUs.tsx | H1 Headline | Ueber ToJo Verwaltungs GmbH | Ueber Tojo Heizoel |
-| AboutUs.tsx | Meta description | ToJo Verwaltungs GmbH | Tojo Heizoel |
-| AboutUs.tsx | Story-Text | ToJo Verwaltungs GmbH | Tojo Heizoel |
-| AboutUs.tsx | Badge (Zeile 408) | ToJo Verwaltungs GmbH | Tojo Heizoel |
-| AboutUs.tsx | Kontakt-Header (Zeile 416) | ToJo Verwaltungs GmbH | Tojo Heizoel |
-| AboutUs.tsx | Anschrift (Zeile 432) | Bleibt (postalisch korrekt) | -- |
-| AboutUs.tsx | Company Card (Zeile 222) | Bleibt als Untertitel | -- |
+### Zusammenfassung
+| Aktion | Datei |
+|--------|-------|
+| Neues Favicon kopieren | `public/favicon.png` (ueberschreiben) |
+| Altes .ico loeschen | `public/favicon.ico` (entfernen) |
+| Theme-Color anpassen | `index.html` Zeile 16 |
 
