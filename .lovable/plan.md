@@ -1,12 +1,16 @@
 
-# Shop-ID in allen Preisrechnern aktualisieren
+# Heizölpreise aktualisieren
 
-Die Checkout-URL ist bereits korrekt auf `checkout.tojo-heizoel.de` gesetzt. Die Shop-ID muss in 3 Dateien von `5cb5aa20-02d3-4297-a799-19cf1b238a1d` auf `bcca4ece-bada-4a73-9ac4-fa18805c5ad6` geaendert werden:
+Preise in allen 3 Preisrechner-Komponenten ändern:
 
-| Datei | Zeile | Aenderung |
-|-------|-------|-----------|
-| `src/components/PriceCalculator.tsx` | 22 | Shop-ID aktualisieren |
-| `src/components/HorizontalPriceCalculator.tsx` | 19 | Shop-ID aktualisieren |
-| `src/components/MobilePriceCalculator.tsx` | 40 | Shop-ID aktualisieren |
+| Produkt | Alt | Neu |
+|---------|-----|-----|
+| Standard | 0.60€/L | 0.90€/L |
+| Premium | 0.63€/L | 0.93€/L |
 
-Alle drei Stellen: `5cb5aa20-02d3-4297-a799-19cf1b238a1d` wird zu `bcca4ece-bada-4a73-9ac4-fa18805c5ad6`.
+### Dateien
+| Datei | Änderung |
+|-------|----------|
+| `src/components/PriceCalculator.tsx` | `0.60` → `0.90`, `0.63` → `0.93` |
+| `src/components/HorizontalPriceCalculator.tsx` | `0.60` → `0.90`, `0.63` → `0.93` |
+| `src/components/MobilePriceCalculator.tsx` | `0.60` → `0.90`, `0.63` → `0.93` |
