@@ -14,12 +14,12 @@ const PriceOverviewSection = () => {
 
   // Preisentwicklung Mock-Daten
   const priceHistory = [
-    { month: 'Jan', standard: 0.68, premium: 0.71 },
-    { month: 'Feb', standard: 0.69, premium: 0.72 },
-    { month: 'Mär', standard: 0.67, premium: 0.70 },
-    { month: 'Apr', standard: 0.70, premium: 0.73 },
-    { month: 'Mai', standard: 0.72, premium: 0.75 },
-    { month: 'Jun', standard: 0.70, premium: 0.73 },
+    { month: 'Jan', standard: 0.88, premium: 0.91 },
+    { month: 'Feb', standard: 0.89, premium: 0.92 },
+    { month: 'Mär', standard: 0.87, premium: 0.90 },
+    { month: 'Apr', standard: 0.90, premium: 0.93 },
+    { month: 'Mai', standard: 0.92, premium: 0.95 },
+    { month: 'Jun', standard: 0.90, premium: 0.93 },
   ];
 
   const chartConfig = {
