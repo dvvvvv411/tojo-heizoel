@@ -10,7 +10,7 @@ import { Check, Droplets, Shield } from 'lucide-react';
 const products = {
   standard: {
     name: 'Standard Heizöl',
-    price: 0.90,
+    price: 0.70,
     description: 'Schwefelarmes Heizöl EL',
     features: [
       'DIN 51603-1 konform',
@@ -23,7 +23,7 @@ const products = {
   },
   premium: {
     name: 'Premium Heizöl',
-    price: 0.93,
+    price: 0.73,
     description: 'Additivierte Qualität',
     features: [
       'Besserer Korrosionsschutz',

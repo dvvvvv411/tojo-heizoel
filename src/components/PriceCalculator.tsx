@@ -15,8 +15,8 @@ const PriceCalculator = () => {
   const { toast } = useToast();
 
   const prices = {
-    standard_heizoel: 0.90,
-    premium_heizoel: 0.93
+    standard_heizoel: 0.60,
+    premium_heizoel: 0.63
   };
 
   const shopId = "bcca4ece-bada-4a73-9ac4-fa18805c5ad6";

@@ -138,7 +138,7 @@ const DesignSystem = () => {
           <div className="grid md:grid-cols-3 gap-6">
             <PriceCard
               title="Standard Heizöl"
-              price={0.90}
+              price={0.70}
               unit="Liter"
               features={[
                 "DIN-geprüfte Qualität",
@@ -150,7 +150,7 @@ const DesignSystem = () => {
             />
             <PriceCard
               title="Premium Heizöl"
-              price={0.93}
+              price={0.73}
               originalPrice={0.78}
               unit="Liter"
               popular={true}

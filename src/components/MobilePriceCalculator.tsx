@@ -16,8 +16,8 @@ const MobilePriceCalculator = () => {
   
 
   const prices = {
-    standard_heizoel: 0.90,
-    premium_heizoel: 0.93
+    standard_heizoel: 0.60,
+    premium_heizoel: 0.63
   };
 
   const products = [

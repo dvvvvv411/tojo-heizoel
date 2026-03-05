@@ -1,30 +1,12 @@
 
+# Shop-ID in allen Preisrechnern aktualisieren
 
-# Alle Heizölpreise im Projekt aktualisieren
+Die Checkout-URL ist bereits korrekt auf `checkout.tojo-heizoel.de` gesetzt. Die Shop-ID muss in 3 Dateien von `5cb5aa20-02d3-4297-a799-19cf1b238a1d` auf `bcca4ece-bada-4a73-9ac4-fa18805c5ad6` geaendert werden:
 
-Neben den 3 Preisrechnern gibt es noch weitere Stellen mit alten Preisen:
+| Datei | Zeile | Aenderung |
+|-------|-------|-----------|
+| `src/components/PriceCalculator.tsx` | 22 | Shop-ID aktualisieren |
+| `src/components/HorizontalPriceCalculator.tsx` | 19 | Shop-ID aktualisieren |
+| `src/components/MobilePriceCalculator.tsx` | 40 | Shop-ID aktualisieren |
 
-## Änderungen
-
-| Datei | Zeile | Alt | Neu |
-|-------|-------|-----|-----|
-| `src/components/ProductSelector.tsx` | 13 | `0.70` | `0.90` |
-| `src/components/ProductSelector.tsx` | 26 | `0.73` | `0.93` |
-| `src/pages/DesignSystem.tsx` | 141 | `0.70` | `0.90` |
-| `src/pages/DesignSystem.tsx` | 153 | `0.73` | `0.93` |
-| `src/components/PriceOverviewSection.tsx` | 17-23 | Alte Chart-Daten | Werte um +0.20 erhöhen |
-
-### PriceOverviewSection Chart-Daten (Zeilen 17-23)
-Die historischen Preisdaten im Chart werden ebenfalls um 20 Cent angehoben:
-
-| Monat | Standard alt → neu | Premium alt → neu |
-|-------|--------------------|-------------------|
-| Jan | 0.68 → 0.88 | 0.71 → 0.91 |
-| Feb | 0.69 → 0.89 | 0.72 → 0.92 |
-| Mär | 0.67 → 0.87 | 0.70 → 0.90 |
-| Apr | 0.70 → 0.90 | 0.73 → 0.93 |
-| Mai | 0.72 → 0.92 | 0.75 → 0.95 |
-| Jun | 0.70 → 0.90 | 0.73 → 0.93 |
-
-Hinweis: Die Treffer in `HandelsblattBanner.tsx` sind SVG-Pfaddaten (keine Preise) und werden nicht geändert.
-
+Alle drei Stellen: `5cb5aa20-02d3-4297-a799-19cf1b238a1d` wird zu `bcca4ece-bada-4a73-9ac4-fa18805c5ad6`.
